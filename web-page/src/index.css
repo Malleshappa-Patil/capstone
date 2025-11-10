@@ -1,0 +1,68 @@
+/* body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+.MuiDropzoneArea-root {
+	background-color: transparent !important;
+}
+.MuiDropzoneArea-text, .MuiDropzoneArea-icon {
+  color: white !important;
+} */
+
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.MuiDropzoneArea-root {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border: 2px dashed #be6a77 !important;
+  border-radius: 15px !important;
+  transition: all 0.3s ease !important;
+}
+
+.MuiDropzoneArea-root:hover {
+  background-color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.MuiDropzoneArea-text, .MuiDropzoneArea-icon {
+  color: #be6a77 !important;
+  font-weight: 500 !important;
+}
+
+.MuiCard-root {
+  border-radius: 15px !important;
+  overflow: hidden !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.MuiTableCell-root {
+  color: #4a4a4a !important;
+}
+
+.MuiTypography-root {
+  color: #333 !important;
+}

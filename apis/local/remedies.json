@@ -1,0 +1,557 @@
+{
+  "Early-blight": {
+    "title": "Early Blight (Alternaria solani)",
+    "short_description": "Early blight is a fungal disease that causes dark, concentric ring spots on older leaves, leading to yellowing and premature leaf drop.",
+    "symptoms": [
+      "Brown to black circular spots with concentric rings (target-like appearance)",
+      "Starts on lower, older leaves and moves upward",
+      "Yellowing and drying of leaves around spots",
+      "Stem lesions near soil line and fruit rot on green fruit"
+    ],
+    "causes": [
+      "Caused by fungus Alternaria solani",
+      "Favored by warm (75–85°F), humid weather and prolonged leaf wetness",
+      "Spreads via wind, rain splash, and infected debris"
+    ],
+    "treatment_steps": [
+      {
+        "step": 1,
+        "action": "Remove infected leaves",
+        "details": "Prune and dispose of affected leaves early to slow disease spread."
+      },
+      {
+        "step": 2,
+        "action": "Apply fungicides",
+        "details": "Use chlorothalonil or mancozeb-based fungicides every 7–10 days. Examples: Daconil, Mancozeb Flowable."
+      },
+      {
+        "step": 3,
+        "action": "Use resistant varieties",
+        "details": "Choose cultivars labeled 'EBR' (Early Blight Resistant)."
+      },
+      {
+        "step": 4,
+        "action": "Mulch and improve air flow",
+        "details": "Apply straw mulch to prevent soil splash and stake plants for air movement."
+      },
+      {
+        "step": 5,
+        "action": "Rotate crops",
+        "details": "Avoid planting tomatoes or potatoes in the same area for 2–3 years."
+      }
+    ],
+    "prevention": [
+      "Use disease-free seeds and transplants",
+      "Avoid overhead irrigation",
+      "Keep foliage dry",
+      "Remove debris at end of season"
+    ],
+    "organic_solutions": [
+      "Copper fungicides (e.g., copper hydroxide)",
+      "Bacillus subtilis (Serenade)",
+      "Neem oil sprays for mild infections"
+    ],
+    "chemical_solutions": [
+      "Chlorothalonil (Daconil): 1.5 tsp/gal water",
+      "Mancozeb (Dithane M-45): 2 lb/acre",
+      "Azoxystrobin (Quadris) for severe infections"
+    ],
+    "estimated_recovery_time": "3–4 weeks with consistent treatment",
+    "severity_level": "medium-high",
+    "external_resources": [
+      {
+        "title": "Cornell - Early Blight of Tomato",
+        "url": "https://vegetablemdonline.ppath.cornell.edu/factsheets/Tomato_EarlyBlt.htm"
+      },
+      {
+        "title": "University of Minnesota Extension - Early Blight",
+        "url": "https://extension.umn.edu/diseases/early-blight-tomato"
+      }
+    ],
+    "images": [
+      {
+        "description": "Concentric ring lesions on tomato leaf",
+        "url": "/static/images/early_blight_leaf.jpg"
+      },
+      {
+        "description": "Stem lesions and yellowing leaves",
+        "url": "/static/images/early_blight_stem.jpg"
+      }
+    ],
+    "warning": "Fungicides work best when applied preventively. Remove infected tissue immediately."
+  },
+
+  "Late-blight": {
+    "title": "Late Blight (Phytophthora infestans)",
+    "short_description": "Late blight is a devastating oomycete disease that causes dark, water-soaked lesions on leaves, stems, and fruit, often killing plants rapidly.",
+    "symptoms": [
+      "Large, irregular dark-green to brown water-soaked spots",
+      "White fungal growth on undersides of leaves in humid conditions",
+      "Rapid collapse of foliage and stems",
+      "Brown, firm rot on fruit with grayish-white mold"
+    ],
+    "causes": [
+      "Caused by Phytophthora infestans (same pathogen as potato blight)",
+      "Spreads via wind, rain, and infected plant material",
+      "Favored by cool (60–75°F) and wet weather"
+    ],
+    "treatment_steps": [
+      {
+        "step": 1,
+        "action": "Remove infected plants immediately",
+        "details": "Uproot and destroy infected plants to prevent further spread."
+      },
+      {
+        "step": 2,
+        "action": "Apply fungicides preventively",
+        "details": "Use chlorothalonil or copper-based fungicides. Apply every 5–7 days during wet weather."
+      },
+      {
+        "step": 3,
+        "action": "Avoid overhead watering",
+        "details": "Use drip irrigation and water early in the morning to reduce humidity."
+      },
+      {
+        "step": 4,
+        "action": "Ensure field sanitation",
+        "details": "Remove plant debris and weeds that host the pathogen."
+      }
+    ],
+    "prevention": [
+      "Plant certified disease-free seeds",
+      "Provide good spacing and airflow",
+      "Rotate crops for 3 years or more",
+      "Avoid planting near potatoes"
+    ],
+    "organic_solutions": [
+      "Copper sprays (Bordeaux mixture)",
+      "Neem oil for mild cases",
+      "Serenade (Bacillus subtilis)"
+    ],
+    "chemical_solutions": [
+      "Chlorothalonil (Bravo Ultrex)",
+      "Mancozeb (Dithane M-45)",
+      "Zoxamide + Mancozeb (Gavel)"
+    ],
+    "estimated_recovery_time": "Difficult to recover; early intervention critical",
+    "severity_level": "very high",
+    "external_resources": [
+      {
+        "title": "Penn State Extension - Late Blight",
+        "url": "https://extension.psu.edu/late-blight-of-tomato"
+      }
+    ],
+    "images": [
+      {
+        "description": "Water-soaked lesions on tomato leaves",
+        "url": "/static/images/late_blight_leaf.jpg"
+      },
+      {
+        "description": "White mold growth under leaf",
+        "url": "/static/images/late_blight_mold.jpg"
+      }
+    ],
+    "warning": "Highly contagious and can destroy crops in days. Monitor daily in humid weather."
+  },
+
+  "Leaf-mold": {
+    "title": "Leaf Mold (Passalora fulva / Cladosporium fulvum)",
+    "short_description": "Leaf mold affects primarily the foliage, appearing as yellow spots on top and olive-green fuzzy mold underneath.",
+    "symptoms": [
+      "Pale green to yellow spots on upper leaf surface",
+      "Olive-green to gray mold growth under leaves",
+      "Leaves curl, wither, and drop prematurely",
+      "Rarely affects fruit under normal conditions"
+    ],
+    "causes": [
+      "Caused by fungus Passalora fulva (Cladosporium fulvum)",
+      "Favored by high humidity (>85%) and poor ventilation",
+      "Spread by air currents, tools, and water splash"
+    ],
+    "treatment_steps": [
+      {
+        "step": 1,
+        "action": "Reduce humidity and improve airflow",
+        "details": "Increase ventilation in greenhouses; prune dense foliage."
+      },
+      {
+        "step": 2,
+        "action": "Apply fungicides",
+        "details": "Use chlorothalonil, mancozeb, or copper-based fungicides weekly."
+      },
+      {
+        "step": 3,
+        "action": "Use resistant varieties",
+        "details": "Select cultivars with Cf resistance genes (e.g., Cf-2, Cf-5)."
+      },
+      {
+        "step": 4,
+        "action": "Remove infected leaves",
+        "details": "Dispose of infected foliage and avoid overhead watering."
+      }
+    ],
+    "prevention": [
+      "Maintain greenhouse humidity below 85%",
+      "Ensure good air circulation",
+      "Avoid watering in late evening",
+      "Sanitize greenhouse surfaces"
+    ],
+    "organic_solutions": [
+      "Potassium bicarbonate sprays",
+      "Copper fungicides",
+      "Neem oil applications"
+    ],
+    "chemical_solutions": [
+      "Chlorothalonil (Daconil)",
+      "Mancozeb (Dithane M-45)",
+      "Azoxystrobin (Quadris)"
+    ],
+    "estimated_recovery_time": "2–3 weeks after reducing humidity",
+    "severity_level": "medium",
+    "external_resources": [
+      {
+        "title": "Cornell - Tomato Leaf Mold",
+        "url": "https://vegetablemdonline.ppath.cornell.edu/factsheets/Tomato_LeafMold.htm"
+      }
+    ],
+    "images": [
+      {
+        "description": "Olive-green mold under leaves",
+        "url": "/static/images/leaf_mold_underside.jpg"
+      }
+    ],
+    "warning": "Thrives in humid greenhouses — manage ventilation carefully."
+  },
+
+  "Mosaic-virus": {
+    "title": "Tomato Mosaic Virus (ToMV)",
+    "short_description": "A viral disease causing mottled yellow-green leaves, distortion, and stunted growth.",
+    "symptoms": [
+      "Mottled (light and dark green) leaf patterns",
+      "Distorted or fern-like leaf shapes",
+      "Reduced fruit size and uneven ripening",
+      "No mold or rot — symptoms purely visual"
+    ],
+    "causes": [
+      "Caused by Tomato mosaic virus (ToMV) or Tobacco mosaic virus (TMV)",
+      "Spread mechanically through hands, tools, and infected plant debris",
+      "Virus can persist in soil and tools for months"
+    ],
+    "treatment_steps": [
+      {
+        "step": 1,
+        "action": "Remove infected plants",
+        "details": "Destroy infected plants immediately to stop spread."
+      },
+      {
+        "step": 2,
+        "action": "Disinfect tools and hands",
+        "details": "Use 10% bleach or 70% alcohol after handling infected material."
+      },
+      {
+        "step": 3,
+        "action": "Use resistant varieties",
+        "details": "Select varieties labeled 'ToMV-resistant'."
+      },
+      {
+        "step": 4,
+        "action": "Rotate crops",
+        "details": "Avoid planting solanaceous crops in the same area for 2 years."
+      }
+    ],
+    "prevention": [
+      "Avoid smoking near plants (TMV can transmit from tobacco)",
+      "Wash hands before handling plants",
+      "Buy certified disease-free seeds"
+    ],
+    "organic_solutions": [
+      "Seaweed extract sprays for plant recovery",
+      "Neem oil as mild antiviral deterrent"
+    ],
+    "chemical_solutions": [
+      "No chemical cure — only preventive sanitation measures"
+    ],
+    "estimated_recovery_time": "No cure; remove infected plants",
+    "severity_level": "medium",
+    "external_resources": [
+      {
+        "title": "UC IPM - Tomato Mosaic Virus",
+        "url": "https://ipm.ucanr.edu/PMG/GARDEN/VEGES/DISEASES/tomatovirmos.html"
+      }
+    ],
+    "images": [
+      {
+        "description": "Mottled leaves with mosaic pattern",
+        "url": "/static/images/mosaic_virus_leaf.jpg"
+      }
+    ],
+    "warning": "Extremely persistent on tools and hands — strict hygiene required."
+  },
+
+  "Septoria-leaf-spot": {
+    "title": "Septoria Leaf Spot (Septoria lycopersici)",
+    "short_description": "A common fungal disease causing numerous small, circular brown leaf spots leading to defoliation.",
+    "symptoms": [
+      "Small, circular brown spots with light centers (1–3 mm)",
+      "Dark margins around spots",
+      "Leaves yellow and drop prematurely",
+      "Usually starts on lower leaves first"
+    ],
+    "causes": [
+      "Caused by fungus Septoria lycopersici",
+      "Favored by wet, humid conditions and overhead watering",
+      "Spreads through splashing water and infected debris"
+    ],
+    "treatment_steps": [
+      {
+        "step": 1,
+        "action": "Remove infected leaves",
+        "details": "Prune affected foliage to reduce spore spread."
+      },
+      {
+        "step": 2,
+        "action": "Apply fungicides",
+        "details": "Spray chlorothalonil or copper-based fungicides every 7–10 days."
+      },
+      {
+        "step": 3,
+        "action": "Improve air circulation",
+        "details": "Stake plants and maintain spacing."
+      },
+      {
+        "step": 4,
+        "action": "Rotate crops",
+        "details": "Do not plant tomatoes or peppers in the same soil for 2 years."
+      }
+    ],
+    "prevention": [
+      "Avoid overhead irrigation",
+      "Remove plant debris post-season",
+      "Use clean seed and resistant varieties"
+    ],
+    "organic_solutions": [
+      "Copper fungicides",
+      "Bacillus subtilis formulations"
+    ],
+    "chemical_solutions": [
+      "Chlorothalonil (Daconil)",
+      "Mancozeb (Dithane)"
+    ],
+    "estimated_recovery_time": "2–3 weeks if detected early",
+    "severity_level": "medium",
+    "external_resources": [
+      {
+        "title": "Cornell - Septoria Leaf Spot",
+        "url": "https://vegetablemdonline.ppath.cornell.edu/factsheets/Tomato_Septoria.htm"
+      }
+    ],
+    "images": [
+      {
+        "description": "Small brown spots with light centers",
+        "url": "/static/images/septoria_leaf_spot.jpg"
+      }
+    ],
+    "warning": "Rapidly spreads under humid conditions — begin fungicide early."
+  },
+
+  "Yellow-leaf-curl-virus": {
+    "title": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+    "short_description": "A viral disease transmitted by whiteflies that causes leaf curling, yellowing, and stunted growth.",
+    "symptoms": [
+      "Upward curling and yellowing of leaves",
+      "Stunted growth and reduced fruiting",
+      "Thick, leathery leaves with crinkled texture",
+      "Flower drop and poor fruit set"
+    ],
+    "causes": [
+      "Caused by Tomato yellow leaf curl virus (TYLCV)",
+      "Transmitted by whiteflies (Bemisia tabaci)",
+      "Spreads rapidly in warm, dry conditions"
+    ],
+    "treatment_steps": [
+      {
+        "step": 1,
+        "action": "Control whiteflies",
+        "details": "Use yellow sticky traps and neem oil sprays. Introduce beneficial insects like Encarsia formosa."
+      },
+      {
+        "step": 2,
+        "action": "Remove infected plants",
+        "details": "Uproot and destroy affected plants immediately."
+      },
+      {
+        "step": 3,
+        "action": "Use resistant varieties",
+        "details": "Choose TYLCV-tolerant hybrids (e.g., ‘Tyking’, ‘Tylcv-Res’)."
+      },
+      {
+        "step": 4,
+        "action": "Install insect-proof nets",
+        "details": "Use fine mesh screens to block whiteflies in greenhouses."
+      }
+    ],
+    "prevention": [
+      "Monitor for whiteflies weekly",
+      "Use reflective mulches to deter insects",
+      "Weed control around tomato fields",
+      "Avoid planting near infected crops"
+    ],
+    "organic_solutions": [
+      "Neem oil sprays (2% concentration)",
+      "Yellow sticky traps",
+      "Biological control using parasitoid wasps"
+    ],
+    "chemical_solutions": [
+      "Imidacloprid soil drench (Confidor)",
+      "Acetamiprid foliar spray (Mospilan)",
+      "Thiamethoxam (Actara) — check local regulations"
+    ],
+    "estimated_recovery_time": "No cure; focus on vector control and prevention",
+    "severity_level": "very high",
+    "external_resources": [
+      {
+        "title": "UC IPM - Tomato Yellow Leaf Curl Virus",
+        "url": "https://ipm.ucanr.edu/PMG/GARDEN/VEGES/DISEASES/tomato-leafcurl.html"
+      }
+    ],
+    "images": [
+      {
+        "description": "Yellowing and upward curled leaves",
+        "url": "/static/images/yellow_leaf_curl.jpg"
+      }
+    ],
+    "warning": "Highly contagious viral disease — focus on vector (whitefly) management."
+  },
+
+  "Bacterial-spot": {
+    "title": "Bacterial Spot (Xanthomonas spp.)",
+    "short_description": "Bacterial spot is a serious disease affecting tomato leaves, stems, and fruit, causing small dark spots with yellow halos.",
+    "symptoms": [
+      "Small, dark brown to black spots on leaves (1-3mm diameter)",
+      "Yellow halo around spots as they age",
+      "Spots may coalesce, causing large necrotic areas",
+      "Fruit shows small, raised dark spots with white halos",
+      "Severe defoliation in advanced stages"
+    ],
+    "causes": [
+      "Caused by Xanthomonas bacteria (X. euvesicatoria, X. gardneri, X. perforans, X. vesicatoria)",
+      "Spreads through water splash, wind-driven rain, and contaminated tools",
+      "Favored by warm (75-86°F), humid conditions",
+      "Enters through stomata and wounds"
+    ],
+    "treatment_steps": [
+      {
+        "step": 1,
+        "action": "Remove and destroy infected plant material",
+        "details": "Immediately remove severely infected leaves and plants. Bag and dispose of them (do not compost). Disinfect tools with 10% bleach solution between cuts."
+      },
+      {
+        "step": 2,
+        "action": "Apply copper-based bactericides",
+        "details": "Spray copper hydroxide or copper sulfate fungicides every 7-10 days. Apply in early morning when leaves are dry. Products: Kocide 3000, Bonide Copper Fungicide."
+      },
+      {
+        "step": 3,
+        "action": "Use biological controls",
+        "details": "Apply Bacillus subtilis or Streptomyces lydicus-based products. Examples: Serenade, Actinovate. Can be used in organic farming."
+      },
+      {
+        "step": 4,
+        "action": "Improve cultural practices",
+        "details": "Space plants properly (24-36 inches apart), use drip irrigation instead of overhead watering, mulch to prevent soil splash, and avoid working with wet plants."
+      },
+      {
+        "step": 5,
+        "action": "Rotate crops",
+        "details": "Do not plant tomatoes or peppers in the same location for at least 2-3 years. Rotate with non-susceptible crops like corn, beans, or squash."
+      }
+    ],
+    "prevention": [
+      "Use certified disease-free seeds and transplants",
+      "Choose resistant varieties (varieties with bacterial spot resistance)",
+      "Avoid overhead irrigation; use drip systems",
+      "Maintain good air circulation between plants",
+      "Sanitize tools and equipment regularly",
+      "Remove plant debris at end of season",
+      "Apply preventive copper sprays in high-risk periods"
+    ],
+    "organic_solutions": [
+      "Copper-based bactericides (allowed in organic farming in limited amounts)",
+      "Bacillus subtilis (Serenade Garden Disease Control)",
+      "Neem oil (has some antibacterial properties)",
+      "Proper spacing and cultural controls"
+    ],
+    "chemical_solutions": [
+      "Copper hydroxide (Kocide 3000): 1.25-2 lb per acre",
+      "Copper sulfate + mancozeb combination",
+      "Streptomycin (in some regions, check local regulations)",
+      "Always follow label instructions and pre-harvest intervals"
+    ],
+    "estimated_recovery_time": "2-4 weeks with proper treatment; severe infections may require plant removal",
+    "severity_level": "high",
+    "external_resources": [
+      {
+        "title": "Penn State Extension - Bacterial Spot",
+        "url": "https://extension.psu.edu/bacterial-spot-of-tomato"
+      },
+      {
+        "title": "University of Florida IFAS - Bacterial Spot Management",
+        "url": "https://edis.ifas.ufl.edu/publication/PP251"
+      },
+      {
+        "title": "Cornell University - Bacterial Diseases of Tomato",
+        "url": "https://vegetablemdonline.ppath.cornell.edu/factsheets/Tomato_Bacterial.htm"
+      }
+    ],
+    "images": [
+      {
+        "description": "Early bacterial spot symptoms on leaf",
+        "url": "/static/images/bacterial_spot_leaf.jpg"
+      },
+      {
+        "description": "Advanced infection with yellow halos",
+        "url": "/static/images/bacterial_spot_advanced.jpg"
+      },
+      {
+        "description": "Fruit symptoms",
+        "url": "/static/images/bacterial_spot_fruit.jpg"
+      }
+    ],
+    "warning": "Bacterial spot is difficult to control once established. Prevention and early detection are critical. Copper sprays have limited effectiveness once symptoms appear."
+  },
+  
+  "Healthy": {
+    "title": "Healthy Tomato Plant",
+    "short_description": "Your tomato plant appears healthy with no signs of disease.",
+    "maintenance_tips": [
+      "Continue regular watering (1-2 inches per week)",
+      "Fertilize every 2-3 weeks with balanced fertilizer",
+      "Monitor for early signs of pests or diseases",
+      "Prune suckers for better air circulation",
+      "Mulch around plants to conserve moisture",
+      "Provide support with stakes or cages"
+    ],
+    "prevention": [
+      "Inspect plants weekly for early disease detection",
+      "Maintain consistent soil moisture",
+      "Ensure 6-8 hours of sunlight daily",
+      "Practice crop rotation annually",
+      "Remove weeds that compete for nutrients"
+    ],
+    "optimal_conditions": {
+      "temperature": "70-85°F (21-29°C) daytime, 60-70°F (15-21°C) nighttime",
+      "humidity": "40-70%",
+      "pH": "6.0-6.8",
+      "sunlight": "6-8 hours direct sunlight daily",
+      "watering": "1-2 inches per week, more during fruiting"
+    },
+    "severity_level": "none",
+    "external_resources": [
+      {
+        "title": "Tomato Growing Guide - University of Minnesota",
+        "url": "https://extension.umn.edu/vegetables/growing-tomatoes"
+      }
+    ]
+  }
+}
+
