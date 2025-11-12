@@ -1,0 +1,556 @@
+{
+  "Early-blight": {
+    "title": "Early Blight (Alternaria solani)",
+    "short_description": "Early blight is a fungal disease that causes dark, concentric ring spots on older leaves, leading to yellowing and premature leaf drop.",
+    "symptoms": [
+      "Brown to black circular spots with concentric rings (target-like appearance)",
+      "Starts on lower, older leaves and moves upward",
+      "Yellowing and drying of leaves around spots",
+      "Stem lesions near soil line and fruit rot on green fruit"
+    ],
+    "causes": [
+      "Caused by fungus Alternaria solani",
+      "Favored by warm (75\u201385\u00b0F), humid weather and prolonged leaf wetness",
+      "Spreads via wind, rain splash, and infected debris"
+    ],
+    "treatment_steps": [
+      {
+        "step": 1,
+        "action": "Remove infected leaves",
+        "details": "Prune and dispose of affected leaves early to slow disease spread."
+      },
+      {
+        "step": 2,
+        "action": "Apply fungicides",
+        "details": "Use chlorothalonil or mancozeb-based fungicides every 7\u201310 days. Examples: Daconil, Mancozeb Flowable."
+      },
+      {
+        "step": 3,
+        "action": "Use resistant varieties",
+        "details": "Choose cultivars labeled 'EBR' (Early Blight Resistant)."
+      },
+      {
+        "step": 4,
+        "action": "Mulch and improve air flow",
+        "details": "Apply straw mulch to prevent soil splash and stake plants for air movement."
+      },
+      {
+        "step": 5,
+        "action": "Rotate crops",
+        "details": "Avoid planting tomatoes or potatoes in the same area for 2\u20133 years."
+      }
+    ],
+    "prevention": [
+      "Use disease-free seeds and transplants",
+      "Avoid overhead irrigation",
+      "Keep foliage dry",
+      "Remove debris at end of season"
+    ],
+    "organic_solutions": [
+      "Copper fungicides (e.g., copper hydroxide)",
+      "Bacillus subtilis (Serenade)",
+      "Neem oil sprays for mild infections",
+      "Compost tea applications weekly",
+      "Seaweed extract sprays to boost immunity",
+      "Garlic extract natural fungicide",
+      "Potassium bicarbonate sprays"
+    ],
+    "chemical_solutions": [
+      "Chlorothalonil (Daconil): 1.5 tsp/gal water",
+      "Mancozeb (Dithane M-45): 2 lb/acre",
+      "Azoxystrobin (Quadris) for severe infections",
+      "Rotate fungicide classes to prevent resistance"
+    ],
+    "estimated_recovery_time": "3\u20134 weeks with consistent treatment",
+    "severity_level": "medium-high",
+    "warning": "Fungicides work best when applied preventively. Remove infected tissue immediately."
+  },
+
+  "Late-blight": {
+    "title": "Late Blight (Phytophthora infestans)",
+    "short_description": "Late blight is a devastating oomycete disease that causes dark, water-soaked lesions on leaves, stems, and fruit, often killing plants rapidly.",
+    "symptoms": [
+      "Large, irregular dark-green to brown water-soaked spots",
+      "White fungal growth on undersides of leaves in humid conditions",
+      "Rapid collapse of foliage and stems",
+      "Brown, firm rot on fruit with grayish-white mold"
+    ],
+    "causes": [
+      "Caused by Phytophthora infestans (same pathogen as potato blight)",
+      "Spreads via wind, rain, and infected plant material",
+      "Favored by cool (60\u201375\u00b0F) and wet weather"
+    ],
+    "treatment_steps": [
+      {
+        "step": 1,
+        "action": "Remove infected plants immediately",
+        "details": "Uproot and destroy infected plants completely. Bag and burn if permitted. Do NOT compost infected material."
+      },
+      {
+        "step": 2,
+        "action": "Apply fungicides preventively",
+        "details": "Use chlorothalonil (Bravo Ultrex), mancozeb (Dithane M-45), or copper-based fungicides (Bordeaux mixture). Apply every 5-7 days during wet weather. MUST be applied BEFORE infection for best control."
+      },
+      {
+        "step": 3,
+        "action": "Optimize irrigation and reduce leaf wetness",
+        "details": "Use drip irrigation exclusively - avoid overhead watering. Water early in morning to allow foliage to dry. Increase plant spacing and airflow to reduce humidity in canopy."
+      },
+      {
+        "step": 4,
+        "action": "Implement strict field sanitation and crop rotation",
+        "details": "Remove all plant debris and volunteer plants immediately. Rotate crops for 3+ years. Eliminate nightshade weeds nearby. Cover abandoned piles with black plastic."
+      },
+      {
+        "step": 5,
+        "action": "Use resistant varieties and early warning systems",
+        "details": "Plant cultivars with broad-spectrum genetic resistance to late blight. Implement disease forecasting systems. Take preventive action when conditions favor disease (cool 60-75\u00b0F + wet weather)."
+      }
+    ],
+    "prevention": [
+      "Plant certified disease-free seeds",
+      "Provide good spacing and airflow",
+      "Rotate crops for 3 years or more",
+      "Avoid planting near potatoes",
+      "Monitor weather forecasts and use late blight prediction models",
+      "Scout fields daily during favorable conditions",
+      "Eliminate cull piles and volunteer tomatoes/potatoes completely",
+      "Plant in sequential crops to avoid losing entire harvest at once",
+      "Use raised beds with excellent drainage"
+    ],
+    "organic_solutions": [
+      "Copper sprays (Bordeaux mixture, copper hydroxide) - every 5-7 days during risk periods",
+      "Bacillus subtilis (Serenade) - limited effectiveness, use as part of integrated approach",
+      "Neem oil - only for very mild cases, not effective for established infections",
+      "Cultural controls: crop rotation, sanitation, resistant varieties are CRITICAL"
+    ],
+    "chemical_solutions": [
+      "Chlorothalonil (Bravo Ultrex)",
+      "Mancozeb (Dithane M-45)",
+      "Zoxamide + Mancozeb (Gavel)",
+      "Copper-based fungicides",
+      "Always rotate fungicide classes to prevent resistance"
+    ],
+    "estimated_recovery_time": "Difficult to recover; early intervention critical",
+    "severity_level": "very high",
+    "warning": "Highly contagious and can destroy crops in days. Monitor daily in humid weather. Focus on PREVENTION through resistant varieties and preventive fungicides."
+  },
+
+  "Leaf-mold": {
+    "title": "Leaf Mold (Passalora fulva / Cladosporium fulvum)",
+    "short_description": "Leaf mold affects primarily the foliage, appearing as yellow spots on top and olive-green fuzzy mold underneath. Thrives in high humidity conditions.",
+    "symptoms": [
+      "Pale green to yellow spots on upper leaf surface",
+      "Olive-green to gray mold growth under leaves",
+      "Leaves curl, wither, and drop prematurely",
+      "Rarely affects fruit under normal conditions"
+    ],
+    "causes": [
+      "Caused by fungus Passalora fulva (Cladosporium fulvum)",
+      "Favored by high humidity (>85%) and poor ventilation",
+      "Spread by air currents, tools, and water splash"
+    ],
+    "treatment_steps": [
+      {
+        "step": 1,
+        "action": "Reduce humidity and improve airflow",
+        "details": "Increase ventilation in greenhouses; prune dense foliage. Maintain humidity below 85%."
+      },
+      {
+        "step": 2,
+        "action": "Apply biological fungicides",
+        "details": "Use Trichoderma spp. (OT1, AT2, BT3) at 23 grams per liter - achieves 100% mycelial inhibition in 5 days. Apply preventively before disease symptoms appear."
+      },
+      {
+        "step": 3,
+        "action": "Apply chemical fungicides",
+        "details": "Use chlorothalonil, mancozeb, or azoxystrobin weekly. Cover lower leaf surfaces where disease first appears."
+      },
+      {
+        "step": 4,
+        "action": "Use resistant varieties",
+        "details": "Select cultivars with Cf resistance genes (e.g., Cf-2, Cf-5)."
+      },
+      {
+        "step": 5,
+        "action": "Disinfect greenhouse surfaces",
+        "details": "Clean and disinfect greenhouse regularly. Use ozone sterilization if available to control fungal spores."
+      }
+    ],
+    "prevention": [
+      "Maintain greenhouse humidity below 85%",
+      "Ensure good air circulation",
+      "Avoid watering in late evening",
+      "Sanitize greenhouse surfaces and tools regularly",
+      "Remove lower leaves that are close to soil surface",
+      "Use ozone sterilization in greenhouses when available",
+      "Monitor relative humidity continuously"
+    ],
+    "organic_solutions": [
+      "Potassium bicarbonate sprays (2-3 gm per liter)",
+      "Copper fungicides",
+      "Trichoderma harzianum biological control (23 gm/liter)",
+      "Neem oil applications (2-3 tablespoons per gallon)",
+      "Bacillus subtilis formulations (Trianum V)",
+      "Pantoea agglomerans - reduces mycelial growth by 60%+"
+    ],
+    "chemical_solutions": [
+      "Chlorothalonil (Daconil)",
+      "Mancozeb (Dithane M-45)",
+      "Azoxystrobin (Quadris)",
+      "Triflumizole or polyoxin B for rotation"
+    ],
+    "estimated_recovery_time": "2\u20133 weeks after reducing humidity",
+    "severity_level": "medium",
+    "warning": "Thrives in humid greenhouses \u2014 manage ventilation carefully. Remove lower leaves regularly."
+  },
+
+  "Mosaic-virus": {
+    "title": "Tomato Mosaic Virus (ToMV)",
+    "short_description": "A viral disease causing mottled yellow-green leaves, distortion, and stunted growth. Extremely persistent on surfaces - NO CHEMICAL CURE EXISTS.",
+    "symptoms": [
+      "Mottled (light and dark green) leaf patterns",
+      "Distorted or fern-like leaf shapes",
+      "Reduced fruit size and uneven ripening",
+      "No mold or rot \u2014 symptoms purely visual"
+    ],
+    "causes": [
+      "Caused by Tomato mosaic virus (ToMV) or Tobacco mosaic virus (TMV)",
+      "Spread mechanically through hands, tools, and infected plant debris",
+      "Virus can persist in soil and tools for MONTHS",
+      "Transmits from tobacco products to plants"
+    ],
+    "treatment_steps": [
+      {
+        "step": 1,
+        "action": "Remove and destroy infected plants immediately",
+        "details": "Uproot infected plants completely as soon as symptoms appear. Destroy by burning or deep burial (NOT composting). Early removal prevents mechanical spread."
+      },
+      {
+        "step": 2,
+        "action": "Disinfect all tools, hands, and equipment thoroughly",
+        "details": "Use 10% bleach solution or 70% alcohol to disinfect pruning tools, stakes, gloves between EACH plant. Wash hands with soap before handling plants. Virus persists on surfaces for months."
+      },
+      {
+        "step": 3,
+        "action": "Implement strict sanitation protocols",
+        "details": "Avoid smoking near plants (TMV transmits from tobacco). Workers wash hands before entering field. Clean equipment and boots when moving between fields. Sanitize greenhouse surfaces."
+      },
+      {
+        "step": 4,
+        "action": "Apply biological controls and plant immunity boosters",
+        "details": "Use Bacillus subtilis + Pseudomonas fluorescens + brown alga (Sargassum) extract. Studies show this reduces disease severity to 27.46% and inhibits virus accumulation by 86.48%. Apply 100 mL bacterial suspension to rhizosphere."
+      },
+      {
+        "step": 5,
+        "action": "Use resistant varieties with ToMV/TMV resistance genes",
+        "details": "Select varieties labeled 'ToMV-resistant' or 'TMV-resistant'. Resistance genes provide most effective long-term control. Check seed catalogs for resistant cultivars."
+      }
+    ],
+    "prevention": [
+      "Use certified virus-free seeds from reputable sources",
+      "Disinfect tools and hands between EVERY plant - virus extremely persistent",
+      "Avoid smoking or using tobacco products near tomato plants",
+      "Wash hands thoroughly with soap before handling plants",
+      "Remove and destroy infected plants immediately upon detection",
+      "Rotate crops for 2+ years with non-solanaceous crops",
+      "Control weeds that may harbor the virus",
+      "Do NOT compost infected plants or materials"
+    ],
+    "organic_solutions": [
+      "Biological controls: Bacillus subtilis + Pseudomonas fluorescens - reduce disease severity by up to 73%",
+      "Brown alga extract (Sargassum angustifolium) - 100 mL per plant to rhizosphere",
+      "Seaweed extract sprays - boost plant defense mechanisms",
+      "Neem oil - mild antiviral deterrent (limited effectiveness)",
+      "Hot water seed treatment: 50\u00b0C for 25 minutes",
+      "Sodium hypochlorite seed treatment: 1-1.5% for 10 minutes",
+      "NO chemical cure exists - prevention and sanitation are CRITICAL"
+    ],
+    "chemical_solutions": [
+      "NO CHEMICAL CURE EXISTS",
+      "Only preventive sanitation and biological controls work",
+      "Focus on plant immunity boosting with seaweed extract and plant growth promoters"
+    ],
+    "estimated_recovery_time": "No cure once infected - plants remain infected for life",
+    "severity_level": "medium",
+    "warning": "Tomato Mosaic Virus is EXTREMELY persistent on tools, hands, and surfaces for months. Strict hygiene and sanitation are absolutely critical. There is NO chemical cure - only prevention works. Remove infected plants immediately."
+  },
+
+  "Septoria-leaf-spot": {
+    "title": "Septoria Leaf Spot (Septoria lycopersici)",
+    "short_description": "A common fungal disease causing numerous small, circular brown leaf spots with light centers, leading to rapid defoliation.",
+    "symptoms": [
+      "Small, circular brown spots with light centers (1\u20133 mm)",
+      "Dark margins around spots",
+      "Leaves yellow and drop prematurely",
+      "Usually starts on lower leaves first"
+    ],
+    "causes": [
+      "Caused by fungus Septoria lycopersici",
+      "Favored by wet, humid conditions and overhead watering",
+      "Spreads through splashing water and infected debris"
+    ],
+    "treatment_steps": [
+      {
+        "step": 1,
+        "action": "Remove and destroy infected leaves immediately",
+        "details": "Prune affected foliage to reduce spore spread. Destroy by burning or deep burial. Disinfect pruning tools between cuts."
+      },
+      {
+        "step": 2,
+        "action": "Apply fungicides at first sign of disease",
+        "details": "Spray chlorothalonil (Daconil) or copper-based fungicides every 7-10 days. Begin applications preventively before symptoms appear. Ensure thorough coverage of lower leaves."
+      },
+      {
+        "step": 3,
+        "action": "Improve air circulation and reduce leaf wetness",
+        "details": "Stake plants and maintain proper spacing (24-36 inches). Remove suckers and lower lateral growth. Prune excess interior foliage to improve airflow. This reduces leaf wetness critical for spore germination."
+      },
+      {
+        "step": 4,
+        "action": "Optimize irrigation management",
+        "details": "Use drip irrigation or water at plant base only. Water early in the day to allow foliage to dry before nightfall. Avoid overhead watering which splashes spores upward."
+      },
+      {
+        "step": 5,
+        "action": "Implement crop rotation and sanitation",
+        "details": "Rotate away from tomatoes and peppers for 2+ years. Control solanaceous weeds. Remove all crop debris at season end. Use mulch or plastic to prevent soil splash onto leaves."
+      }
+    ],
+    "prevention": [
+      "Avoid overhead irrigation",
+      "Remove plant debris post-season",
+      "Use clean seed and resistant varieties",
+      "Apply mulch (straw, plastic) to prevent soil splash",
+      "Use raised beds to improve drainage",
+      "Avoid working in fields when leaves are wet",
+      "Scout plants frequently - inspect twice weekly",
+      "Start with pathogen-free certified seeds",
+      "Maintain balanced fertilization to promote plant vigor"
+    ],
+    "organic_solutions": [
+      "Copper fungicides (copper hydroxide, copper sulfate) - spray every 7-10 days",
+      "Bacillus subtilis formulations (Serenade, Trianum V) - 23 grams per liter",
+      "Trichoderma harzianum biological control",
+      "Baking soda solution (1 tablespoon per gallon + few drops soap) - alters leaf pH",
+      "Neem oil (2-3 tablespoons per gallon) - for early stage control",
+      "Compost tea - boost plant immunity",
+      "Garlic extract and plant-based fungicides"
+    ],
+    "chemical_solutions": [
+      "Chlorothalonil (Daconil)",
+      "Mancozeb (Dithane)",
+      "Copper sulfate combinations",
+      "Always rotate fungicide classes to prevent resistance"
+    ],
+    "estimated_recovery_time": "2\u20133 weeks if detected early",
+    "severity_level": "medium",
+    "warning": "Rapidly spreads under humid conditions \u2014 begin fungicide early. Scout fields twice weekly for early detection."
+  },
+
+  "Yellow-leaf-curl-virus": {
+    "title": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+    "short_description": "A viral disease transmitted by whiteflies that causes leaf curling, yellowing, and stunted growth. NO CURE - focus on resistant varieties and whitefly control.",
+    "symptoms": [
+      "Upward curling and yellowing of leaves",
+      "Stunted growth and reduced fruiting",
+      "Thick, leathery leaves with crinkled texture",
+      "Flower drop and poor fruit set"
+    ],
+    "causes": [
+      "Caused by Tomato yellow leaf curl virus (TYLCV)",
+      "Transmitted by whiteflies (Bemisia tabaci)",
+      "Spreads rapidly in warm, dry conditions",
+      "Strong correlation between whitefly density and disease incidence"
+    ],
+    "treatment_steps": [
+      {
+        "step": 1,
+        "action": "Control whitefly vector populations aggressively",
+        "details": "Use yellow sticky traps (20-30 per acre). Apply neem oil sprays (2% concentration). Introduce Encarsia formosa parasitoid wasps and Beauveria bassiana fungus. Monitor whitefly populations weekly."
+      },
+      {
+        "step": 2,
+        "action": "Remove and destroy infected plants immediately",
+        "details": "Uproot and destroy affected plants as soon as symptoms appear. Remove roots completely after harvest. Eliminate volunteer tomatoes and solanaceous weeds. Bag and burn infected material."
+      },
+      {
+        "step": 3,
+        "action": "Use TYLCV-resistant varieties with Ty genes",
+        "details": "Plant varieties with Ty-1, Ty-2, Ty-3, Ty-3a, or Ty-5 resistance genes (e.g., 'Tyking', 'Tylcv-Res'). Multi-disease resistant lines combining Ty-1/Ty-3 + WF genes show significantly better performance. Resistance never 100% but dramatically reduces disease severity."
+      },
+      {
+        "step": 4,
+        "action": "Install physical barriers and use reflective mulches",
+        "details": "Use fine mesh insect-proof screens (50-mesh) in greenhouses and nurseries to block whiteflies. Install reflective silver or aluminum mulches to deter whitefly landing. Use protective netting for high-value crops."
+      },
+      {
+        "step": 5,
+        "action": "Apply biopesticides and plant immunity boosters",
+        "details": "Spray fungal culture filtrate (F8-culture) or plant-based viricides. Studies show F8-culture filtrate keeps 43-100% of plants healthy vs 0-14% in water control. Apply gibberellin to enhance plant resistance."
+      }
+    ],
+    "prevention": [
+      "Use Ty-gene resistant varieties (Ty-1, Ty-3, Ty-3a, Ty-5) - most effective prevention",
+      "Plant multi-disease and insect-resistant lines (Ty genes + whitefly resistance)",
+      "Install insect-proof netting (50-mesh) in nurseries and greenhouses",
+      "Use reflective mulches (silver/aluminum) to repel whiteflies",
+      "Monitor whitefly populations weekly using yellow sticky traps",
+      "Remove volunteer tomatoes and solanaceous weeds - eliminate virus reservoirs",
+      "Practice crop rotation with non-host crops (cereals, legumes)",
+      "Avoid planting near infected fields - virus spreads 1750-5000m",
+      "Plant trap crops (marigolds, maize) around field perimeter",
+      "Use certified virus-free seeds and transplants only",
+      "Destroy crop debris immediately - remove all roots",
+      "Avoid excessive nitrogen - increases plant susceptibility",
+      "Maintain balanced nutrition to reduce plant stress",
+      "Coordinate area-wide management with neighboring farms"
+    ],
+    "organic_solutions": [
+      "Neem oil sprays (2% concentration, 2-3 tablespoons per gallon) - repels whiteflies",
+      "Yellow sticky traps - 20-30 per acre for monitoring and mass trapping",
+      "Biological control: Encarsia formosa parasitoid wasps - highly effective",
+      "Beauveria bassiana fungus - infects and kills whitefly nymphs and adults",
+      "Fungal culture filtrate (F8-culture) - induces systemic plant immunity",
+      "Seaweed extracts and plant growth promoters - boost plant defense",
+      "Botanical extracts: neem (most effective), tithonia, datura - reduce whitefly populations",
+      "Reflective mulches (silver/aluminum) - deter whitefly landing",
+      "Insect-proof netting (50-mesh) in nurseries and greenhouses"
+    ],
+    "chemical_solutions": [
+      "Imidacloprid soil drench (Confidor) - systemic insecticide for whitefly control",
+      "Acetamiprid foliar spray (Mospilan) - reduces whitefly populations",
+      "Thiamethoxam (Actara) - effective against whiteflies (check local regulations)",
+      "Pyrethroid insecticides as soil drench during seedling stage",
+      "Rotate insecticide classes to prevent whitefly resistance",
+      "Note: Focus on vector control - NO chemical cure for virus once plant infected"
+    ],
+    "estimated_recovery_time": "No cure once infected - plants remain infected for life",
+    "severity_level": "very high",
+    "warning": "TYLCV is HIGHLY contagious via whiteflies. Once infected, plants cannot be cured. Prevention through resistant varieties and aggressive whitefly control is absolutely critical. Temperature affects resistance - breakdown occurs above 30\u00b0C."
+  },
+
+  "Bacterial-spot": {
+    "title": "Bacterial Spot (Xanthomonas spp.)",
+    "short_description": "Bacterial spot is a serious disease affecting tomato leaves, stems, and fruit, causing small dark spots with yellow halos. Copper resistance increasing globally.",
+    "symptoms": [
+      "Small, dark brown to black spots on leaves (1-3mm diameter)",
+      "Yellow halo around spots as they age",
+      "Spots may coalesce, causing large necrotic areas",
+      "Fruit shows small, raised dark spots with white halos",
+      "Severe defoliation in advanced stages"
+    ],
+    "causes": [
+      "Caused by Xanthomonas bacteria (X. euvesicatoria, X. gardneri, X. perforans, X. vesicatoria)",
+      "Spreads through water splash, wind-driven rain, and contaminated tools",
+      "Favored by warm (75-86\u00b0F), humid conditions",
+      "Enters through stomata and wounds"
+    ],
+    "treatment_steps": [
+      {
+        "step": 1,
+        "action": "Remove and destroy infected plant material immediately",
+        "details": "Immediately remove severely infected leaves and plants. Bag and dispose of them (do not compost). Disinfect tools with 10% bleach solution between cuts to prevent pathogen spread."
+      },
+      {
+        "step": 2,
+        "action": "Apply copper-based bactericides with biological controls",
+        "details": "Spray copper hydroxide (Kocide 3000) or copper sulfate fungicides every 7-10 days. Rotate with biological controls like Bacillus subtilis (Serenade) or B. amyloliquefaciens to reduce resistance. Apply in early morning when leaves are dry."
+      },
+      {
+        "step": 3,
+        "action": "Integrate biological controls and plant growth promoters",
+        "details": "Apply Bacillus subtilis, Streptomyces lydicus (Actinovate), or plant extracts (neem, garlic). Studies show biological agents can reduce disease severity by 45-65% when combined with cultural practices."
+      },
+      {
+        "step": 4,
+        "action": "Improve cultural practices and field sanitation",
+        "details": "Space plants properly (24-36 inches apart), use drip irrigation instead of overhead watering, mulch to prevent soil splash. Avoid working with wet plants. Maintain field hygiene by removing crop debris immediately."
+      },
+      {
+        "step": 5,
+        "action": "Rotate crops and use resistant varieties",
+        "details": "Do not plant tomatoes, peppers, or solanaceous crops in the same location for at least 2-3 years. Rotate with non-host crops like corn, beans, or squash. Choose varieties with bacterial spot resistance genes."
+      }
+    ],
+    "prevention": [
+      "Use certified disease-free seeds and transplants",
+      "Choose resistant varieties (with bacterial spot resistance genes)",
+      "Avoid overhead irrigation; use drip systems",
+      "Maintain good air circulation between plants",
+      "Sanitize tools and equipment regularly",
+      "Remove plant debris at end of season",
+      "Apply preventive copper sprays in high-risk periods",
+      "Use yellow sticky traps to monitor pest populations",
+      "Install preventive copper sprays during high-risk periods",
+      "Monitor field regularly - inspect plants twice weekly"
+    ],
+    "organic_solutions": [
+      "Copper-based bactericides (Kocide 3000, Bonide) - allowed in organic farming",
+      "Bacillus subtilis (Serenade) - 2 ml per liter of water",
+      "Bacillus amyloliquefaciens - highly effective biological control",
+      "Plant extracts: Neem oil (2-3%), garlic extract, chamomile extract",
+      "Vinegar solutions (5% concentration) as foliar spray",
+      "Proper spacing and cultural controls",
+      "Hot water seed treatment (50\u00b0C for 25 minutes)"
+    ],
+    "chemical_solutions": [
+      "Copper hydroxide (Kocide 3000): 1.25-2 lb per acre, spray every 7-10 days",
+      "Copper sulfate + mancozeb combination products",
+      "Streptomycin (where locally approved - check regulations)",
+      "Magnesium oxide (MgO) nanomaterial - 29-38% better control than copper",
+      "Always rotate between different bactericide classes",
+      "Follow label instructions strictly - observe pre-harvest intervals"
+    ],
+    "estimated_recovery_time": "2-4 weeks with proper treatment; severe infections may require plant removal",
+    "severity_level": "high",
+    "warning": "Bacterial spot is difficult to control once established. Prevention and early detection are critical. Copper sprays have limited effectiveness once symptoms appear."
+  },
+
+  "Healthy": {
+    "title": "Healthy Tomato Plant",
+    "short_description": "Your tomato plant appears healthy with no signs of disease. Maintain optimal growing conditions and continue preventive practices.",
+    "maintenance_tips": [
+      "Water deeply and consistently (1-2 inches per week) - avoid irregular watering",
+      "Use drip irrigation or water at plant base to keep foliage dry",
+      "Fertilize every 2-3 weeks with balanced fertilizer (10-10-10 or tomato-specific)",
+      "Apply organic fertilizers, compost, and rock dust (Azomite) for trace minerals",
+      "Monitor for early signs of pests or diseases - inspect plants twice weekly",
+      "Prune suckers and lower branches for better air circulation",
+      "Remove lower leaves to prevent soil-borne disease splash",
+      "Mulch around plants with straw or organic material to conserve moisture",
+      "Provide support with stakes, cages, or trellises",
+      "Maintain proper spacing (24-36 inches) for adequate airflow",
+      "Apply foliar sprays: compost tea weekly, Epsom salt (1 tbsp/gallon) every 2 weeks",
+      "Use aspirin spray (500mg/gallon) every 2-3 weeks to boost plant immune system",
+      "Deep plowing before planting to destroy pest eggs and pathogens",
+      "Clean and disinfect tools regularly with bleach or alcohol solution"
+    ],
+    "prevention": [
+      "Inspect plants weekly for early disease detection - scout twice per week minimum",
+      "Maintain consistent soil moisture - irregular watering causes stress and disorders",
+      "Ensure 8-10 hours of direct sunlight daily for optimal growth",
+      "Practice crop rotation annually - 2-3 year rotation with non-solanaceous crops",
+      "Remove weeds that compete for nutrients and harbor pests/diseases",
+      "Use certified disease-free seeds and transplants",
+      "Test soil annually and amend with 3-6 inches of compost",
+      "Avoid working with plants when leaves are wet",
+      "Install yellow sticky traps for early pest detection",
+      "Maintain balanced fertilization - avoid excessive nitrogen",
+      "Remove all crop debris at season end - do not compost diseased material",
+      "Sanitize stakes, cages, and supports between seasons",
+      "Plant resistant varieties when available for your region",
+      "Use raised beds with excellent drainage",
+      "Implement integrated pest management (IPM) strategies"
+    ],
+    "optimal_conditions": {
+      "temperature": "70-85\u00b0F (21-29\u00b0C) daytime, 60-70\u00b0F (15-21\u00b0C) nighttime",
+      "humidity": "40-70%",
+      "pH": "6.0-6.8",
+      "sunlight": "8-10 hours direct sunlight daily for optimal growth",
+      "watering": "1-2 inches per week, more during flowering and fruiting. Water deeply every 5-7 days rather than frequent shallow watering. Use drip irrigation. Water at base of plants in early morning."
+    },
+    "severity_level": "none",
+    "warning": "Continue preventive maintenance and regular scouting to catch any diseases early."
+  }
+}
