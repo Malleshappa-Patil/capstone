@@ -1,68 +1,121 @@
-/* body {
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-		sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
-}
-
-.MuiDropzoneArea-root {
-	background-color: transparent !important;
-}
-.MuiDropzoneArea-text, .MuiDropzoneArea-icon {
-  color: white !important;
-} */
-
-
-
 body {
   margin: 0;
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
+/* Dropzone */
 .MuiDropzoneArea-root {
-  background-color: rgba(255, 255, 255, 0.9) !important;
+  background-color: #ffffff !important;
   border: 2px dashed #be6a77 !important;
   border-radius: 15px !important;
   transition: all 0.3s ease !important;
 }
 
 .MuiDropzoneArea-root:hover {
-  background-color: rgba(255, 255, 255, 1) !important;
+  background-color: #fff !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
 }
 
-.MuiDropzoneArea-text, .MuiDropzoneArea-icon {
-  color: #be6a77 !important;
-  font-weight: 500 !important;
+.upload-tip {
+  font-size: 0.85rem;
+  color: #6b3540;
+  opacity: 0.85;
+  margin-top: 8px;
 }
 
-.MuiCard-root {
-  border-radius: 15px !important;
-  overflow: hidden !important;
-  background: rgba(255, 255, 255, 0.95) !important;
-  backdrop-filter: blur(10px) !important;
+/* Remedies layout */
+.resultWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
 }
 
-.MuiTableCell-root {
-  color: #4a4a4a !important;
+.imageContainer {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.MuiTypography-root {
-  color: #333 !important;
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
 }
+
+.remediesContainer {
+  background-color: #fff;
+  color: #000;
+  border-radius: 16px;
+  padding: 2em;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  margin-top: 1.5em;
+}
+
+/* Remedy sections */
+.remedy-block {
+  background: #f9f9f9;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px 14px;
+  transition: background 0.2s ease-in-out;
+}
+
+.remedy-block:hover {
+  background: #f2f2f2;
+}
+
+.remedy-block summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+
+.remedy-list {
+  margin: 8px 0 0 18px;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .imageContainer img {
+    max-height: 250px;
+  }
+
+  .remediesContainer {
+    padding: 1em;
+  }
+}
+@media (max-width: 480px) {
+  .imageContainer img {
+    max-height: 200px;
+  }
+}
+@media (max-width: 360px) {
+  .imageContainer img {
+    max-height: 150px;
+  }
+}
+@media (max-width: 320px) {
+  .imageContainer img {
+    max-height: 120px;
+  }
+}
+
+/* Button hover effect */
+.MuiButton-root:hover {
+  background-color: #9c3b47 !important;
+}   
