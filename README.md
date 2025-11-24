@@ -1,4 +1,4 @@
-# Tomato Disease Detection
+# Enhancing Agricultural Productivity with AI-Based Tomato Leaf Disease Prediction
 
 This repository contains two user-facing clients and a shared prediction backend:
 
