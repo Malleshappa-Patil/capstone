@@ -25,6 +25,19 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
+## Configure the prediction API
+
+The mobile UI expects a FastAPI server to be reachable over your local network.
+
+1. Start the backend with LAN access enabled:
+   ```bash
+   cd ../apis/local
+   pip install -r requirements.txt
+   uvicorn main:app --host 0.0.0.0 --port 8001 --reload
+   ```
+2. Copy `.env.example` to `.env` inside `app-page/` and point `EXPO_PUBLIC_API_BASE_URL` to the machine running FastAPI, e.g. `http://192.168.0.42:8001`.
+3. Restart Expo (`npm run start`) so the new environment variable is picked up. The app performs a `/ping` health-check before uploads and will warn you if it cannot reach the API.
+
 ## Get a fresh project
 
 When you're ready, run:

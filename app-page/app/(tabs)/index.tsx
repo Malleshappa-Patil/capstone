@@ -8,7 +8,9 @@ import {
   ScrollView,
   ActivityIndicator,
   Alert,
+  Platform,
 } from 'react-native';
+import Constants from 'expo-constants';
 import * as ImagePicker from 'expo-image-picker';
 
 interface PredictionData {
@@ -27,8 +29,138 @@ interface PredictionData {
   };
 }
 
-const API_URL = 'http://10.5.41.192:8001/predict'; // Change to your API URL if needed
-// const API_URL = 'http://localhost:8000/predict'; // Change to your API URL if needed
+type DebuggerManifest = {
+  debuggerHost?: string;
+  extra?: {
+    expoGo?: {
+      debuggerHost?: string;
+    };
+  };
+};
+
+const DEFAULT_API_PORT = 8001;
+const MIME_TYPE_BY_EXTENSION: Record<string, string> = {
+  jpg: 'image/jpeg',
+  jpeg: 'image/jpeg',
+  png: 'image/png',
+  heic: 'image/heic',
+  heif: 'image/heif',
+  webp: 'image/webp',
+};
+
+const stripTrailingSlash = (url: string) => url.replace(/\/$/, '');
+
+const getDebuggerHost = () => {
+  if (Constants.expoConfig?.hostUri) {
+    return Constants.expoConfig.hostUri;
+  }
+
+  const manifest = (Constants.manifest2 ?? Constants.manifest) as DebuggerManifest | null;
+  return manifest?.extra?.expoGo?.debuggerHost ?? manifest?.debuggerHost ?? null;
+};
+
+const getApiBaseUrl = () => {
+  const envUrl = process.env.EXPO_PUBLIC_API_BASE_URL;
+  if (envUrl && envUrl.trim().length > 0) {
+    return stripTrailingSlash(envUrl.trim());
+  }
+
+  const debuggerHost = getDebuggerHost();
+  if (debuggerHost) {
+    const host = debuggerHost.split(':')[0];
+    if (host) {
+      return `http://${host}:${DEFAULT_API_PORT}`;
+    }
+  }
+
+  return `http://localhost:${DEFAULT_API_PORT}`;
+};
+
+const getFileExtension = (uri: string) => {
+  const cleanedUri = uri.split('?')[0];
+  const match = cleanedUri.match(/\.([a-zA-Z0-9]+)$/);
+  return match ? match[1].toLowerCase() : null;
+};
+
+const getMimeType = (asset: ImagePicker.ImagePickerAsset) => {
+  if (asset.mimeType) {
+    return asset.mimeType;
+  }
+
+  if (asset.type && asset.type.includes('/')) {
+    return asset.type;
+  }
+
+  const ext = getFileExtension(asset.uri);
+  if (ext && MIME_TYPE_BY_EXTENSION[ext]) {
+    return MIME_TYPE_BY_EXTENSION[ext];
+  }
+
+  return 'image/jpeg';
+};
+
+const getFileName = (asset: ImagePicker.ImagePickerAsset) => {
+  if (asset.fileName) {
+    return asset.fileName;
+  }
+
+  const ext = getFileExtension(asset.uri) ?? 'jpg';
+  return `upload.${ext}`;
+};
+
+const createUploadFormData = (asset: ImagePicker.ImagePickerAsset) => {
+  const formData = new FormData();
+
+  if (Platform.OS === 'web' && asset.file) {
+    const fileName = asset.file.name || getFileName(asset);
+    formData.append('file', asset.file, fileName);
+    return formData;
+  }
+
+  formData.append('file', {
+    uri: asset.uri,
+    type: getMimeType(asset),
+    name: getFileName(asset),
+  } as any);
+
+  return formData;
+};
+
+const parseErrorMessage = (body: string, status?: number) => {
+  if (!body) {
+    return status ? `Request failed with status ${status}` : 'Request failed';
+  }
+
+  try {
+    const parsed = JSON.parse(body);
+    if (typeof parsed === 'string') {
+      return parsed;
+    }
+
+    if (parsed?.detail) {
+      if (Array.isArray(parsed.detail)) {
+        return parsed.detail[0]?.msg ?? JSON.stringify(parsed.detail);
+      }
+      return parsed.detail;
+    }
+
+    if (parsed?.error) {
+      return parsed.error;
+    }
+
+    if (parsed?.message) {
+      return parsed.message;
+    }
+  } catch {
+    // ignore JSON parse errors and fall back to raw body
+  }
+
+  return body;
+};
+
+const API_BASE_URL = getApiBaseUrl();
+const API_URL = `${API_BASE_URL}/predict`;
+const API_HEALTHCHECK_URL = `${API_BASE_URL}/ping`;
 
 export default function HomeScreen() {
   const [selectedFile, setSelectedFile] = useState<ImagePicker.ImagePickerAsset | null>(null);
@@ -36,45 +168,79 @@ export default function HomeScreen() {
   const [data, setData] = useState<PredictionData | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [imageUploaded, setImageUploaded] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [apiReachable, setApiReachable] = useState(true);
   const remedyRef = useRef(null);
+
+  const healthCheck = useCallback(async () => {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 4000);
+
+    try {
+      const response = await fetch(API_HEALTHCHECK_URL, {
+        method: 'GET',
+        cache: 'no-store',
+        signal: controller.signal,
+      });
+      setApiReachable(response.ok);
+      return response.ok;
+    } catch {
+      setApiReachable(false);
+      return false;
+    } finally {
+      clearTimeout(timeoutId);
+    }
+  }, []);
 
   const sendFile = useCallback(async () => {
     if (selectedFile) {
       try {
+        setErrorMessage(null);
         setIsLoading(true);
-        const formData = new FormData();
-        formData.append('file', {
-          uri: selectedFile.uri,
-          type: selectedFile.type || 'image/jpeg',
-          name: selectedFile.fileName || 'image.jpg',
-        } as any);
+        const backendReachable = await healthCheck();
+        if (!backendReachable) {
+          throw new Error(
+            `Unable to reach the prediction API at ${API_BASE_URL}. ` +
+              'Ensure the FastAPI server is running and accessible from your device.'
+          );
+        }
+
+        const formData = createUploadFormData(selectedFile);
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 15000);
         const res = await fetch(API_URL, {
           method: 'POST',
           body: formData,
-          headers: {
-            'Content-Type': 'multipart/form-data',
-          },
+          signal: controller.signal,
         });
-        const result: PredictionData = await res.json();
-        if (res.ok) {
-          setData(result);
-        } else {
-          Alert.alert('Error', 'Prediction failed');
+        clearTimeout(timeoutId);
+
+        const responseBody = await res.text();
+        if (!res.ok) {
+          throw new Error(parseErrorMessage(responseBody, res.status));
         }
+
+        const result: PredictionData = JSON.parse(responseBody);
+        setData(result);
       } catch (error) {
         console.error('Prediction Error:', error);
-        Alert.alert('Error', 'Network error');
+        const friendlyMessage =
+          error instanceof Error ? error.message : 'Unable to connect to the prediction service.';
+        setErrorMessage(friendlyMessage);
+        setData(null);
+        Alert.alert('Error', friendlyMessage);
       } finally {
         setIsLoading(false);
       }
     }
-  }, [selectedFile]);
+  }, [selectedFile, healthCheck]);
 
   const clearData = () => {
     setSelectedFile(null);
     setPreview(null);
     setData(null);
     setImageUploaded(false);
+    setErrorMessage(null);
   };
 
   useEffect(() => {
@@ -84,6 +250,12 @@ export default function HomeScreen() {
       sendFile();
     }
   }, [selectedFile, sendFile]);
+
+  useEffect(() => {
+    healthCheck();
+    const interval = setInterval(healthCheck, 60000);
+    return () => clearInterval(interval);
+  }, [healthCheck]);
 
   const pickImage = async () => {
     const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
@@ -99,6 +271,7 @@ export default function HomeScreen() {
     });
 
     if (!result.canceled) {
+      setErrorMessage(null);
       setSelectedFile(result.assets[0]);
     }
   };
@@ -172,6 +345,19 @@ export default function HomeScreen() {
       <View style={styles.header}>
         <Text style={styles.headerText}>Tomato Disease Detection</Text>
       </View>
+
+      {(!apiReachable || errorMessage) && (
+        <View style={styles.errorBanner}>
+          <Text style={styles.errorBannerTitle}>
+            {!apiReachable ? 'Prediction API unreachable' : 'Upload failed'}
+          </Text>
+          <Text style={styles.errorBannerMessage}>
+            {!apiReachable
+              ? `Could not reach ${API_BASE_URL}. Ensure the FastAPI server is running with "uvicorn main:app --host 0.0.0.0 --port ${DEFAULT_API_PORT}" and that your device shares the same network.`
+              : errorMessage}
+          </Text>
+        </View>
+      )}
 
       {!imageUploaded && !isLoading && !data && (
         <View style={styles.uploadCard}>
@@ -390,5 +576,24 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 16,
     fontWeight: 'bold',
+  },
+  errorBanner: {
+    marginHorizontal: 20,
+    marginTop: 16,
+    padding: 16,
+    borderRadius: 12,
+    backgroundColor: '#fdecea',
+    borderLeftWidth: 4,
+    borderLeftColor: '#d9534f',
+  },
+  errorBannerTitle: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#a94442',
+    marginBottom: 4,
+  },
+  errorBannerMessage: {
+    fontSize: 14,
+    color: '#a94442',
   },
 });
