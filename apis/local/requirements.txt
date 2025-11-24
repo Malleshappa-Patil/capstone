@@ -3,3 +3,4 @@ Pillow
 numpy
 uvicorn
 python-multipart
+requests
